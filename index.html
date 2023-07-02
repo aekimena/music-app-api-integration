@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="header-sec">
+        <div class="search-sec container">
+          <p class="h1 pb-3 text-center text-light">
+            Search For Any Song, Album or Artist
+          </p>
+          <div class="search-box">
+            <div class="input-group mb-1">
+              <input
+                type="text"
+                class="form-control"
+                id="search-form"
+                placeholder="Search"
+                aria-label="Text input with dropdown button"
+                style="border-radius: 0"
+              />
+              <button
+                class="btn btn-dark dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="border-radius: 0"
+              >
+                Category
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li class="dropdown-item">Song</li>
+                <li class="dropdown-item">Album</li>
+                <li class="dropdown-item">Artist</li>
+              </ul>
+            </div>
+            <div class="search-sugs-cont">
+              <div class="search-sugs"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+    <script src="bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

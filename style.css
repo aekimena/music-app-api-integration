@@ -1,0 +1,53 @@
+.header-sec {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.259), rgb(0,0,0.259)), url(background-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-item {
+    cursor:default;
+}
+
+.search-sugs-cont {
+    position: relative;
+    overflow-y: auto;
+    height: 250px;
+    visibility: hidden;
+}
+
+.search-sugs {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.suggestion-items {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.suggestion-items:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.suggestion-items img {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    object-fit: cover;
+    
+}
+
+.suggestion-items p {
+    padding: 5px;
+}
